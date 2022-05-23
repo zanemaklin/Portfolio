@@ -1,0 +1,28 @@
+html {
+	font-size: 2
+  0px; /* px means "pixels": the base font size is now 10 pixels high  */
+	font-family: "Roboto", sans-serif; /* this should be the rest of the output you got from Google fonts */
+  }
+  html, body {
+    min-height: 100%;
+}
+body { background-color: black; }
+img {
+  height: auto;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+div {
+  color: white;
+}
+#logo {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+#counter {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
