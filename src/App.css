@@ -6,7 +6,7 @@ html {
   html, body {
     min-height: 100%;
 }
-body { background-color: black; }
+body { background-color: rgb(0, 0, 0); }
 img {
   height: auto;
   width: auto;
@@ -16,13 +16,49 @@ img {
 div {
   color: white;
 }
-#logo {
+
+.logo {
   color: white;
+  display: flex;
+  margin-top: 0px;
+  justify-content: center;
+}
+.logo:hover {
+  animation:Rainbow_Background 2s infinite;
+}
+
+.Welcome{
+  color: white;
+  font-size: 40px;
+  margin-top: 0px;
   display: flex;
   justify-content: center;
 }
-#counter {
+.Construction{
   color: white;
+  font-size: 30px;
   display: flex;
   justify-content: center;
+}
+
+@keyframes Rainbow_Background {
+  0%     {filter: opacity(0.4) drop-shadow(0 0 0 red);}
+  50%    {filter: opacity(0.4) drop-shadow(0 0 0 blue);}
+  75%    {filter: opacity(0.4) drop-shadow(0 0 0 green);}
+  80%    {filter: opacity(0.4) drop-shadow(0 0 0 yellow);}
+  100%   {filter: opacity(0.4) drop-shadow(0 0 0 black);}
+ }
+
+@keyframes pulse {
+	0% {
+    filter: opacity(1);
+	}
+
+	50% {
+    filter: opacity(0.5);
+	}
+
+	100% {
+    filter: opacity(1);
+	}
 }

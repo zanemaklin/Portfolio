@@ -14,18 +14,13 @@ const App = () => {
   
   return (
     <div>
-      <div id="logo">
+      <div class="logo">
         <img src="Logo_001.svg" alt="logo"/>
       </div>
-      <div id="counter">
-      {value}&#160;&#160;
-      <button onClick={setToValue(0)}>reset</button>
-      <button onClick={setToValue(value + 1)}>increment</button>
+      <div>
+      <p class = "Welcome"> Hello And Welcome!</p>
+      <p class = "Construction">You are a bit early this site is still under construction!</p>
       </div>
-
-
-
-
     </div>
   )
 }
