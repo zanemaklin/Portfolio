@@ -1,27 +1,26 @@
 import React from 'react'
-import { useState } from 'react'
-import './App.css';
+import { BrowserRouter, Router, Route, Routes} from 'react-router-dom';
+import './App.css'
+import PageRoutes from './Pages/Routes';
+
+import NavBar from './Components/NavBar';
 
 const App = () => {
-  const [value, setValue] = useState(10)
-  
-  const Display = (props) => <div>{props.value}</div>
 
-  const setToValue = (newValue) => () => {
-    console.log('value now', newValue)  // print the new value to console
-    setValue(newValue)
-  }
-  
   return (
+<BrowserRouter>
     <div>
-      <div class="logo">
-        <img src="Logo_001.svg" alt="logo"/>
-      </div>
-      <div>
-      <p class = "Welcome"> Hello And Welcome!</p>
-      <p class = "Construction">You are a bit early this site is still under construction!</p>
-      </div>
+    <NavBar/>
+    <PageRoutes/>
+    
     </div>
+
+
+
+
+</BrowserRouter>
+
   )
 }
 export default App
+
